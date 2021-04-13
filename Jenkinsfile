@@ -3,14 +3,14 @@ pipeline {
     
     tools
     {
-       maven "Maven"
+       maven "maven"
     }
      
     stages {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/devops4solutions/CI-example.git'
+                git branch: 'master', url: 'https://github.com/pravingajula/CI-usingAnsible.git'
              
           }
         }
